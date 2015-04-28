@@ -131,9 +131,9 @@ var svg = d3.select("#chart0").append("svg")
     .attr("height", height);
 
 queue()
-    .defer(d3.json, "https://rawgit.com/Qinita/examples2/master/airports/us.json")
-    .defer(d3.csv, "https://rawgit.com/Qinita/examples2/master/airports/airports.csv")
-    .defer(d3.csv, "https://rawgit.com/Qinita/examples2/master/airports/flights.csv")
+    .defer(d3.json, "https://cdn.rawgit.com/Qinita/examples2/master/airports/us.json")
+    .defer(d3.csv, "https://cdn.rawgit.com/Qinita/examples2/master/airports/airports.csv")
+    .defer(d3.csv, "https://cdn.rawgit.com/Qinita/examples2/master/airports/flights.csv")
     .await(ready);
 
 function ready(error, us, airports, flights) {
